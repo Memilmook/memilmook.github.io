@@ -247,7 +247,7 @@ function Post({ match, location, history }) {
         </div>
 
         {/* 글 수정 삭제 버튼 */}
-        {store.login && store.login.username === 'imki123' && (
+        {store.login && store.login.username === 'memilmook' && (
           <div className="postButtons">
             <Link to={`/quill/${post.postId}`} className="hover no-drag">
               수정
@@ -268,7 +268,7 @@ function Post({ match, location, history }) {
           <div className="hiddenText">{post.text}</div>
 
           {/* 글 수정 삭제 버튼 */}
-          {store.login && store.login.username === 'imki123' && (
+          {store.login && store.login.username === 'memilmook' && (
             <div className="postButtons">
               <Link to={`/quill/${post.postId}`} className="hover no-drag">
                 수정
