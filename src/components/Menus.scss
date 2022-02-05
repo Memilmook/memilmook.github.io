@@ -1,0 +1,48 @@
+@import '~open-color/open-color';
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  button {
+    padding: 8px 8px 8px 16px !important;
+  }
+}
+.list:hover {
+  background: $oc-indigo-3;
+  cursor: pointer;
+}
+.activeList {
+  background: $oc-indigo-1;
+}
+.activeListManual {
+  background: $oc-indigo-1;
+}
+.subList .menuName {
+  padding-left: 20px;
+}
+.subList .menuCnt {
+  margin-right: 5px;
+}
+
+.menuName {
+  height: 21px;
+  overflow: hidden;
+  min-width: 90px;
+  font-weight: bold;
+}
+
+.menuOptions {
+  min-width: 48px;
+  text-align: right;
+}
+.menuOptions span {
+  display: inline-block;
+  min-width: 20px;
+  text-align: right;
+  margin-left: 4px;
+}
+.menuOptions svg {
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  vertical-align: bottom;
+}

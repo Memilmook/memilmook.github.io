@@ -1,3 +1,19 @@
+# 메밀묵 블로그
+
+##### https://memilmook.github.io/
+
+리액트를 사용하는 깃허브 블로그
+
+.env 파일에 `REACT_APP_URL` 변수를 선언해줘야합니다.
+`REACT_APP_URL = "https://memilmook.github.io"`
+
+## 처음 블로그를 만들 때
+
+```
+
+```
+
+
 # GitHub 기본 사용방법
 
 ## 새로운 repository를 생성했을 때

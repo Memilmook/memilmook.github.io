@@ -1,0 +1,82 @@
+@import '~open-color/open-color';
+
+.quill {
+  background: white;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+.quillTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+[name='title'] {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin: 12px 0 0;
+}
+#editor {
+  height: calc(100% - 200px);
+  label {
+    margin-right: 12px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+    input {
+      cursor: pointer;
+    }
+  }
+}
+#tags {
+  margin: 10px 0;
+}
+#tagsTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 12px;
+}
+.editorButton {
+  border: 0px;
+  border-radius: 5px;
+  background: $oc-indigo-5;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 12px;
+}
+#content .ql-editor {
+  padding: 0;
+  a {
+    color: blue;
+  }
+  img {
+    border: 1px solid #e9e9e9;
+  }
+}
+#content .ql-editor .quill .ql-editor,
+.quill .ql-container {
+  min-height: 300px;
+}
+.ql-container {
+  font-size: inherit !important;
+}
+.ql-syntax {
+  width: 100%;
+  overflow: auto !important;
+  font-size: 0.85rem !important;
+  white-space: pre !important;
+  word-wrap: normal !important;
+}
+
+.ql-toolbat.ql-snow {
+  padding: 0;
+}

@@ -1,0 +1,116 @@
+#guideBack {
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 0;
+  background: rgba(0, 0, 0, 0.705);
+  z-index: 20;
+}
+#guideWrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 300px;
+  margin-top: 8px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px 1px black;
+  top: 0;
+}
+@media (max-width: 499px) {
+  #guideWrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-top: 0px;
+    z-index: 20;
+    left: -310px;
+    overflow-y: auto;
+  }
+}
+@media (min-width: 500px) {
+  #guideWrapper {
+    position: relative;
+    width: 300px;
+  }
+}
+#avatar {
+  width: 100%;
+  padding: 16px;
+}
+#avatar div {
+  padding: 4px 0;
+}
+#avatar img {
+  width: 50%;
+  border-radius: 50%;
+}
+#name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#nickName {
+  color: #5e5e5e;
+}
+#github img {
+  width: 24px;
+  vertical-align: bottom;
+}
+#github span {
+  color: #5050ff;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+#introduction {
+  margin-top: 8px;
+}
+
+.menus {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 8px;
+  border-top: 1px solid green;
+  a{
+    transition: all 0.3s ease;
+  }
+  button {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+    
+  }
+  .MuiButtonBase-root {
+    justify-content: space-between;
+  }
+}
+
+.menuLink {
+  min-height: 21px;
+  width: 100%;
+  overflow: hidden;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuLink img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.menuLink svg {
+  font-size: 24px;
+  color: #444444;
+}
+.menuLink div {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 500px) {
+  #guideBack {
+    width: 0px;
+  }
+}
