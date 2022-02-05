@@ -121,7 +121,7 @@ function Quill({ match, location, history }) {
 
   //글 작성 or 수정
   const clickPost = (e) => {
-    if (!store.login || (store.login && store.login.username !== 'imki123')) {
+    if (!store.login || (store.login && store.login.username !== 'memilmook')) {
       alert('글 작성은 블로그 주인만 가능합니다 ^^;')
       return
     }

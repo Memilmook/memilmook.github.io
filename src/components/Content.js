@@ -57,7 +57,7 @@ function Content(props) {
 
       {/* FABs */}
       <div className="FABs">
-        {store.login && store.login.username === 'imki123' && (
+        {store.login && store.login.username === 'memilmook' && (
           <Link id="postFAB" className="hover FAB" to="/quill">
             <AddCircleOutlineIcon />
           </Link>

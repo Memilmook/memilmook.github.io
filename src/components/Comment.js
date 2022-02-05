@@ -114,7 +114,7 @@ function Comment(props) {
           <textarea readOnly onChange={resizeTextarea} />
         </div>
       </div>
-      {((comment.username && comment.username === store.login.username) || store.login.username === 'imki123') && (
+      {((comment.username && comment.username === store.login.username) || store.login.username === 'memilmook') && (
         <div className="commentButtons">
           <button className="commentButton" onClick={updateComment}>
             수정

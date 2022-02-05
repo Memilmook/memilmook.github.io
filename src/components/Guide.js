@@ -30,11 +30,11 @@ function Guide(props) {
         <div className="menus">
           {/*
                       <a
-            href="https://imki123.github.io/interactive_coding"
+            href="https://memilmook.github.io/interactive_coding"
             className="list"
             onClick={(e) => {
               e.preventDefault()
-              window.open('https://imki123.github.io/interactive_coding')
+              window.open('https://memilmook.github.io/interactive_coding')
             }}
           >
             <Button className="menuLink">

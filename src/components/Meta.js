@@ -13,7 +13,7 @@ const Meta = ({ data }) => {
   const title = data.title
   const description = data.description
   const image = data.image !== undefined && `${data.image}`
-  const canonical = data.canonical === undefined ? null : `https://imki123.github.io/${data.canonical}`
+  const canonical = data.canonical === undefined ? null : `https://memilmook.github.io/${data.canonical}`
   const type = data.type === undefined ? 'website' : data.type
   const width = data.image && (data.width || 1200)
   const height = data.image && (data.height || 630)
