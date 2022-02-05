@@ -1,0 +1,25 @@
+{
+  "short_name": "메밀묵의 github 블로그",
+  "name": "메밀묵의 github 블로그",
+  "icons": [
+    {
+      "src": "memil_64.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "memil_120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "memil_120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

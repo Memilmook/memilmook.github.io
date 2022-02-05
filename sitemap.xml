@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://memilmook.github.io</loc>
+    <lastmod>2022-02-05</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://memilmook.github.io/login</loc>
+    <lastmod>2022-02-05</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://memilmook.github.io/comments</loc>
+    <lastmod>2022-02-05</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://memilmook.github.io/register</loc>
+    <lastmod>2022-02-05</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
