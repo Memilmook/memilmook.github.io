@@ -38,7 +38,7 @@ function Login({ history, match, location }) {
               let username
               if (email) {
                 username = email.substring(0, email.indexOf('@')) + '_n'
-                if (username === 'popping2606_n') username = 'imki123' //내아이디
+                if (username === 'memilmook_n') username = 'memilmook' //내아이디
                 console.log('네이버 로그인 성공:', username)
                 user = {
                   username: username,
@@ -61,7 +61,7 @@ function Login({ history, match, location }) {
               let username
               if (email) {
                 username = email.substring(0, email.indexOf('@')) + '_k'
-                if (username === 'popping2606_k') username = 'imki123' //내아이디
+                if (username === 'memilmook_k') username = 'memilmook' //내아이디
                 console.log('카카오 로그인 성공:', username)
                 user = {
                   username: username,
@@ -82,7 +82,7 @@ function Login({ history, match, location }) {
             } else {
               let email = user.email
               let username = email.substring(0, email.indexOf('@')) + '_g'
-              if (username === 'popping2606_g') username = 'imki123' //내아이디
+              if (username === 'memilmook_g') username = 'memilmook' //내아이디
               console.log('구글 로그인 성공:', username)
               user = {
                 username: username,
@@ -92,7 +92,7 @@ function Login({ history, match, location }) {
                 host: user.host,
               }
             }
-            //console.log(user)
+            console.log(user)
 
             let url = process.env.REACT_APP_URL + '/auth/oauth'
             //url = process.env.REACT_APP_LOCAL_URL + '/auth/oauth'
