@@ -4,9 +4,13 @@ import './Quill.scss'
 import 'quill/dist/quill.snow.css'
 import { useQuill } from 'react-quilljs'
 import imageCompress from 'quill-image-compress'
+import { htmlEditButton } from 'quill-html-edit-button'
+import { divider } from 'quill-divider'
 import { AppContext } from '../App'
 import Axios from 'axios'
 import Emoji from './Emoji'
+
+
 
 function Quill({ match, location, history }) {
   const store = React.useContext(AppContext)
@@ -23,7 +27,7 @@ function Quill({ match, location, history }) {
       [{ color: [] }, { background: [] }],
       [{ indent: '-1' }, { indent: '+1' }],
       [{ list: 'ordered' }, { list: 'bullet' }],
-      ['code-block', 'blockquote'],
+      ['code-block', 'blockquote', 'divider'],
       ['link', 'image', 'video'],
       ['clean'],
     ],
@@ -35,13 +39,20 @@ function Quill({ match, location, history }) {
       imageType: 'image/jpeg', // default
       debug: true, // default
     },
-  }
-  const formats = ['bold', 'italic', 'underline', 'strike', 'code-block', 'blockquote', 'size', 'header', 'align', 'color', 'background', 'indent', 'list', 'link', 'image', 'video', 'clean']
+    htmlEditButton: {
 
+    },
+    divider: {
+      cssText: 'border: none;border-bottom: 1px inset;'
+    },
+  }
+
+  const formats = ['bold', 'italic', 'underline', 'strike', 'code-block', 'blockquote', 'size', 'header', 'align', 'color', 'background','divider', 'indent', 'list', 'link', 'image', 'video', 'clean']
   const { quill, quillRef, Quill } = useQuill({ modules, formats })
   if (Quill && !quill) {
     // For execute this line only once.
-    Quill.register('modules/imageCompress', imageCompress)
+    Quill.register('modules/imageCompress', imageCompress);
+    Quill.register("modules/htmlEditButton", htmlEditButton);
   }
 
   useEffect(() => {

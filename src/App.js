@@ -77,7 +77,7 @@ function App() {
       <div id="app">
         <Meta
           data={{
-            title: 'Memilmook github Blog',
+            title: '메밀묵 github 블로그',
             description: 'IT와 관련된 다양한 지식을 포스팅합니다.',
             image: process.env.PUBLIC_URL + '/images/memil_800x400.png',
           }}
