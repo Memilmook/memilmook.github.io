@@ -38,7 +38,7 @@ function Login({ history, match, location }) {
               let username
               if (email) {
                 username = email.substring(0, email.indexOf('@')) + '_n'
-                if (username === 'memilmook_n') username = 'memilmook' //내아이디
+                if (username === 'rnrgns2_n') username = 'memilmook' //내아이디
                 console.log('네이버 로그인 성공:', username)
                 user = {
                   username: username,
@@ -61,7 +61,7 @@ function Login({ history, match, location }) {
               let username
               if (email) {
                 username = email.substring(0, email.indexOf('@')) + '_k'
-                if (username === 'memilmook_k') username = 'memilmook' //내아이디
+                if (username === 'rnrgns2_k') username = 'memilmook' //내아이디
                 console.log('카카오 로그인 성공:', username)
                 user = {
                   username: username,
@@ -82,7 +82,7 @@ function Login({ history, match, location }) {
             } else {
               let email = user.email
               let username = email.substring(0, email.indexOf('@')) + '_g'
-              if (username === 'memilmook_g') username = 'memilmook' //내아이디
+              if (username === 'rnrgns3_g') username = 'memilmook' //내아이디
               console.log('구글 로그인 성공:', username)
               user = {
                 username: username,
@@ -354,7 +354,7 @@ function Login({ history, match, location }) {
       <div id="loginWrapper">
         <Meta
           data={{
-            title: '메밀묵 Github 블로그 블로그',
+            title: '메밀묵 github 블로그',
             description: '네이버, 카카오, 구글 계정으로 로그인 해보세요!',
             canonical: `login`,
           }}

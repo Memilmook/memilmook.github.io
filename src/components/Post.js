@@ -208,7 +208,7 @@ function Post({ match, location, history }) {
         {location.pathname === '/' ? (
           <Meta
             data={{
-              title: '메밀묵 Github 블로그 블로그',
+              title: '메밀묵 github 블로그',
               description: post.text ? post.text.replace(/\n/g, ' ') : '',
               canonical: '',
             }}
