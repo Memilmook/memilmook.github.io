@@ -78,6 +78,21 @@ function Guide(props) {
               <OpenInNewIcon />
             </Button>
           </a>
+          <a href="https://deeplotto.netlify.app/"
+          className ="list"
+          onClick={function(e) {
+            e.preventDefault();
+            window.open('https://deeplotto.netlify.app/');
+          }}
+          >
+            <Button className="menuLink">
+              <div>
+                  <img alt="DeepLearningLotto" src={process.env.PUBLIC_URL + '/images/deepLotto.png'} />
+                   딥러닝 예측 로또번호
+              </div>
+              <OpenInNewIcon />
+            </Button>
+          </a>
         </div>
       </div>
     </>
